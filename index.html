@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio Professionnel</title>
+    <!-- AOS CSS ho an'ny animation (miandry internet) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Jean Zera Arthur</span>
+            </a>
+            
+            <button class="burger-menu" id="burgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="#propos">Profil</a></li>
+                <li><a href="#competences">Mes compétences</a></li>
+                <li><a href="#portfolio">Nos projets</a></li>
+                <li><a href="#contact">Contactez-nous</a></li>
+                <li><a href="assets/cv.pdf" download class="btn-nav-cv">CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-container-flex">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1200">
+                <span class="badge">JEAN Zera Arthur 🥰🥰</span>
+                <h1>Nous concrétisons l'énergie de demain</h1>
+                <p class="hero-sub">Bonjour, je suis Jean Zera Arthur, Développeur d'Applications Informatiques. Passionné par la création de solutions logicielles et d'interfaces modernes.</p>
+                <a href="#portfolio" class="btn-hero-primary">Consulter nos projets →</a>
+            </div>
+            <div class="hero-img-box" data-aos="fade-left" data-aos-duration="1200">
+                <img src="assets/sary-profil (2).jpg" alt="Jean Zera Arthur">
+            </div>
+        </div>
+    </header>
+
+    <section id="propos" class="section-container">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Mon Profil</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="about-grid">
+            <div class="about-text" data-aos="fade-up" data-aos-delay="200">
+                <h3>Développeur passionné d'applications de bureau et web</h3>
+                <p>Actuellement étudiant en deuxième année dans le domaine de l'informatique. Ce qui distingue mon approche, c'est l'attention particulière portée aux détails, notamment dans la création d'interfaces modernes (UI/UX) et épurées pour les logiciels que je développe.</p>
+                <p>J'aime concevoir des solutions simples mais efficaces pour les utilisateurs, allant du développement de la logique métier jusqu'à la mise en place de bases de données SQLite portables et autonomes.</p>
+            </div>
+            <div class="about-card-info" data-aos="fade-up" data-aos-delay="400">
+                <div class="info-row"><span class="label">Statut :</span><span class="value">Étudiant (2ème année)</span></div>
+                <div class="info-row"><span class="label">Spécialité :</span><span class="value">Développement d'applications</span></div>
+                <div class="info-row"><span class="label">Langues :</span><span class="value">Français, Anglais</span></div>
+                <div class="info-row"><span class="label">Intérêts :</span><span class="value">Technologies, Football</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="section-container bg-light">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Mes Compétences</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="cards-grid">
+            <div class="card card-dark-blue" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-icon">💻</div>
+                <h3>Développement Desktop</h3>
+                <p>Création d'applications de bureau robustes et performantes avec VB.NET et Delphi. Utilisation de Guna UI2 pour concevoir des interfaces modernes avec des bordures arrondies.</p>
+            </div>
+            <div class="card card-green" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-icon">🌐</div>
+                <h3>Développement Web</h3>
+                <p>Conception de sites web dynamiques et responsive en utilisant PHP, HTML5, CSS3, et JavaScript.</p>
+            </div>
+            <div class="card card-white" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-icon">🛠</div>
+                <h3>Bases de données</h3>
+                <p>Gestion et conception de structures de bases de données sécurisées avec SQLite pour les applications autonomes et MySQL.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section-container">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Nos projets</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="portfolio-gallery">
+            <!-- Nampiana kilasy 'portfolio-card' sy bokotra 'Voir la vidéo' misy ny rohin'ny video avy amin'ny assets/ -->
+            <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
+                <div class="portfolio-card">
+                    <div class="port-img-box" style="background-image: url('assets/tetikasa1.jpeg');">
+                        <div class="port-caption">Gestion d'Étudiants</div>
+                    </div>
+                    <div class="port-action-box">
+                        <button class="btn-watch-video" data-video="assets/video1.mp4">Voir la vidéo</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="portfolio-card">
+                    <div class="port-img-box" style="background-image: url('assets/tetikasa2.webp');">
+                        <div class="port-caption">Outil de Facturation</div>
+                    </div>
+                    <div class="port-action-box">
+                        <button class="btn-watch-video" data-video="assets/video2.mp4">Voir la vidéo</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="portfolio-card">
+                    <div class="port-img-box" style="background-image: url('assets/tetikasa3.webp');">
+                        <div class="port-caption">Application Web PHP</div>
+                    </div>
+                    <div class="port-action-box">
+                        <button class="btn-watch-video" data-video="assets/video3.mp4">Voir la vidéo</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="400">
+                <div class="portfolio-card">
+                    <div class="port-img-box" style="background-image: url('assets/tetikasa4.jpg');">
+                        <div class="port-caption">UI/UX Design Custom</div>
+                    </div>
+                    <div class="port-action-box">
+                        <button class="btn-watch-video" data-video="assets/video4.mp4">Voir la vidéo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-container bg-light">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Contactez-nous</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="contact-box" data-aos="fade-up">
+            <form id="contact-form" action="https://formspree.io/f/xykaljzz" method="POST" class="contact-form">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Nom complet" required>
+                    <input type="email" name="email" placeholder="Adresse E-mail" required>
+                </div>
+                <input type="text" name="subject" placeholder="Objet" required>
+                <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
+                <button type="submit" class="btn-submit">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Jean Zera Arthur. Tous droits réservés.</p>
+            <p>Website developed 100% Offline.</p>
+        </div>
+    </footer>
+
+    <!-- ========================================================= -->
+    <!-- 🖥️ VATA MODAL POP-UP HO AN'NY VIDEO (Nampiana vaovao) -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <div class="video-wrapper">
+                <video id="modalVideo" controls src=""></video>
+            </div>
+        </div>
+    </div>
+    <!-- ========================================================= -->
+
+    <!-- AOS JS ho an'ny animation (miandry internet vao hiasa) -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 120
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
