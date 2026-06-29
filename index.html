@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio Professionnel</title>
-    <!-- AOS CSS ho an'ny animation (miandry internet) -->
+    <!-- AOS CSS ho an'ny animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -28,7 +28,6 @@
                 <li><a href="#competences">Mes compétences</a></li>
                 <li><a href="#portfolio">Nos projets</a></li>
                 <li><a href="#contact">Contactez-nous</a></li>
-                <!-- HOVANA: cv.pdf mivantana -->
                 <li><a href="cv.pdf" download class="btn-nav-cv">CV</a></li>
             </ul>
         </div>
@@ -38,13 +37,12 @@
         <div class="hero-overlay"></div>
         <div class="hero-container-flex">
             <div class="hero-content" data-aos="fade-right" data-aos-duration="1200">
-                <span class="badge">JEAN Zera Arthur 🥰🥰</span>
-                <h1>Nous concrétisons l'énergie de demain</h1>
+                <span class="badge">JEAN Zera Arthur 🥰</span>
+                <h1>Transformation digitale: de l'idée à l'application. Concrétions ensemble vos projets informatiques</h1>
                 <p class="hero-sub">Bonjour, je suis Jean Zera Arthur, Développeur d'Applications Informatiques. Passionné par la création de solutions logicielles et d'interfaces modernes.</p>
                 <a href="#portfolio" class="btn-hero-primary">Consulter nos projets →</a>
             </div>
             <div class="hero-img-box" data-aos="fade-left" data-aos-duration="1200">
-                <!-- HOVANA: sary-profil (2).jpg mivantana -->
                 <img src="sary-profil (2).jpg" alt="Jean Zera Arthur">
             </div>
         </div>
@@ -104,12 +102,10 @@
             <!-- Tetikasa 1 -->
             <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
                 <div class="portfolio-card">
-                    <!-- HOVANA: tetikasa1.jpeg mivantana -->
                     <div class="port-img-box" style="background-image: url('tetikasa1.jpeg');">
                         <div class="port-caption">Gestion d'Étudiants</div>
                     </div>
                     <div class="port-action-box">
-                        <!-- HOVANA: video1.mp4 mivantana -->
                         <button class="btn-watch-video" data-video="video1.mp4">Voir la vidéo</button>
                     </div>
                 </div>
@@ -118,12 +114,10 @@
             <!-- Tetikasa 2 -->
             <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
                 <div class="portfolio-card">
-                    <!-- HOVANA: tetikasa2.webp mivantana -->
                     <div class="port-img-box" style="background-image: url('tetikasa2.webp');">
                         <div class="port-caption">Outil de Facturation</div>
                     </div>
                     <div class="port-action-box">
-                        <!-- HOVANA: video2.mp4 mivantana -->
                         <button class="btn-watch-video" data-video="video2.mp4">Voir la vidéo</button>
                     </div>
                 </div>
@@ -132,12 +126,10 @@
             <!-- Tetikasa 3 -->
             <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="300">
                 <div class="portfolio-card">
-                    <!-- HOVANA: tetikasa3.webp mivantana -->
                     <div class="port-img-box" style="background-image: url('tetikasa3.webp');">
                         <div class="port-caption">Application Web PHP</div>
                     </div>
                     <div class="port-action-box">
-                        <!-- HOVANA: video3.mp4 mivantana -->
                         <button class="btn-watch-video" data-video="video3.mp4">Voir la vidéo</button>
                     </div>
                 </div>
@@ -146,12 +138,10 @@
             <!-- Tetikasa 4 -->
             <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="400">
                 <div class="portfolio-card">
-                    <!-- HOVANA: tetikasa4.jpg mivantana -->
                     <div class="port-img-box" style="background-image: url('tetikasa4.jpg');">
                         <div class="port-caption">UI/UX Design Custom</div>
                     </div>
                     <div class="port-action-box">
-                        <!-- HOVANA: video4.mp4 mivantana -->
                         <button class="btn-watch-video" data-video="video4.mp4">Voir la vidéo</button>
                     </div>
                 </div>
@@ -170,6 +160,11 @@
                     <input type="text" name="name" placeholder="Nom complet" required>
                     <input type="email" name="email" placeholder="Adresse E-mail" required>
                 </div>
+                <!-- ANDALANA NAMPIDIRINA: Téléphone sy Adresse -->
+                <div class="form-row">
+                    <input type="tel" name="phone" placeholder="Numéro de téléphone" required>
+                    <input type="text" name="address" placeholder="Adresse" required>
+                </div>
                 <input type="text" name="subject" placeholder="Objet" required>
                 <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
                 <button type="submit" class="btn-submit">Envoyer le message</button>
@@ -184,7 +179,6 @@
         </div>
     </footer>
 
-    <!-- 🖥️ VATA MODAL POP-UP HO AN'NY VIDEO -->
     <div class="video-modal" id="videoModal">
         <div class="modal-content">
             <button class="modal-close" id="closeModal">&times;</button>
@@ -194,7 +188,7 @@
         </div>
     </div>
 
-    <!-- AOS JS ho an'ny animation (miandry internet vao hiasa) -->
+    <!-- AOS JS ho an'ny animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({

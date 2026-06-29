@@ -183,19 +183,35 @@ body {
     background-color: #001f44;
 }
 
+/* --- SARY PROFIL --- */
 .hero-img-box {
     flex: 0.8;
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
 }
 .hero-img-box img {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border-radius: 24px;
+    border-radius: 50%;
     border: 5px solid rgba(255, 255, 255, 0.9);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
     max-width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.hero-img-box::before {
+    content: '';
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(124, 176, 35, 0.6) 0%, rgba(124, 176, 35, 0) 70%);
+    opacity: 0.8;
+    z-index: 1;
+    filter: blur(10px);
 }
 
 /* --- MON PROFIL --- */
@@ -289,7 +305,7 @@ body {
     color: #1e293b;
 }
 
-/* --- NOS PROJETS GALLERY (NOHAVAOZINA NY RAKITRA) --- */
+/* --- NOS PROJETS GALLERY --- */
 .portfolio-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -346,14 +362,13 @@ body {
     transform: translateY(-2px);
 }
 
-/* --- 🖥️ STYLE HO AN'NY VATA MODAL VIDEO (Nampiana vaovao) --- */
 .video-modal {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 19, 41, 0.85); /* Loko maizina ao ambadika */
+    background-color: rgba(0, 19, 41, 0.85); 
     z-index: 2000;
     display: flex;
     justify-content: center;
@@ -394,7 +409,7 @@ body {
 }
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* Ratio 16:9 format standard ho an'ny video */
+    padding-bottom: 56.25%;
     height: 0;
 }
 .video-wrapper video {
@@ -428,6 +443,7 @@ body {
     border-radius: 12px;
     font-size: 1rem;
     outline: none;
+    transition: border-color 0.2s;
 }
 .contact-form input:focus, .contact-form textarea:focus {
     border-color: #002d62;
@@ -440,6 +456,7 @@ body {
     border-radius: 12px;
     font-weight: 700;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 .btn-submit:hover {
     background-color: #001f44;
